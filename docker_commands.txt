@@ -1,0 +1,31 @@
+#Commands
+https://docs.docker.com/engine/reference/commandline/rmi/
+
+#Build an image -t stands for tag.  The . describes the local directory relative to the docker file
+sudo docker build -t your-image-name .
+
+#Run your image instance inside of a contaner
+#8083 is the local host port. 3000 is the docker port runing the app in the container
+sudo docker run -p 8082:3000 your-image-name
+
+#Stop th e container from running
+sudo docker container kill (the numeric container ID without thes parenthesis)
+
+#View your Images
+sudo docker images
+
+#Deleting images
+sudo docker rmi -f express-docker
+
+#Show running container
+sudo docker ps
+
+#SHow all containers
+sudo docker ps -a
+
+#Process to getting my app into docker
+1: Create your app
+2: Create the Dockerfile and add the information
+3: Run the build command
+4: Run the 'run' command with the port you need to see 
+4: in the url mapped to the app's port that container is running 
