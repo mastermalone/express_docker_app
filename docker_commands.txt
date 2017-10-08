@@ -1,6 +1,9 @@
 #Commands
 https://docs.docker.com/engine/reference/commandline/rmi/
 
+#start docker
+sudo service docker start
+
 #Build an image -t stands for tag.  The . describes the local directory relative to the docker file
 sudo docker build -t your-image-name .
 
