@@ -11,6 +11,12 @@ sudo docker build -t your-image-name .
 #8083 is the local host port. 3000 is the docker port runing the app in the container
 sudo docker run -p 8082:3000 your-image-name
 
+#Run an image with an interactive terminal '-it'
+sudo docker run -it name-of-the-image
+
+#To exit te running interactive terminal with say, an Ubuntu instance, 
+exit
+
 #Stop th e container from running
 sudo docker container kill (the numeric container ID without thes parenthesis)
 
@@ -23,7 +29,7 @@ sudo docker rmi -f express-docker
 #Show running container
 sudo docker ps
 
-#SHow all containers
+#Show all containers
 sudo docker ps -a
 
 #Process to getting my app into docker
